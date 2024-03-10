@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles/style.css" />
+    <link rel="icon" href="./public/assets/imgs/mask.jpeg" />
+    <script src="./js/main.js"></script>
+    <title>ginn</title>
+  </head>
+  <body>
+    <main class="wrapper relative">
+      <!-- HERO SECTION -->
+      <div
+        id="hero"
+        class="w-screen h-screen bg-img after:absolute after:inset-0 after:bg-primary after:opacity-40 blur-sm"
+      >
+        <img
+          alt="bg-code"
+          src="./public/assets/imgs/bg-img.jpg"
+          class="w-full h-full absolute block"
+        />
+      </div>
+
+      <div
+        class="flex flex-col items-center absolute top-[50vh] left-[50vw] information"
+      >
+        <div class="md:w-[200px] md:h-[100px] w-[160px] h-[80px] avatar-1">
+          <img
+            alt="user avatar"
+            class="w-full h-full object-cover object-top rounded-t-full"
+            src="./public/assets/imgs/mask.jpeg"
+          />
+        </div>
+        <div class="md:w-[200px] md:h-[100px] w-[160px] h-[80px] avatar-2">
+          <img
+            alt="user avatar"
+            class="w-full h-full object-cover object-bottom rounded-b-full"
+            src="./public/assets/imgs/mask.jpeg"
+          />
+        </div>
+
+        <div
+          class="user-avatar md:w-[200px] md:h-[200px] w-[160px] h-[160px] absolute z-[-1]"
+        >
+          <img
+            alt="user avatar"
+            class="w-full h-full rounded-full"
+            src="https://avatars.githubusercontent.com/u/67890264?s=400&u=01382fab2302541acb3a0ef0fe65576641bc70f5&v=4"
+          />
+        </div>
+        <h1
+          class="font-script font-bold md:text-[50px] text-white -rotate-6 mt-1 relative after:absolute after:h-1 after:md:h-[6px] after:md:w-6 after:w-4 after:bg-white after:left-0 after:top-1/2 after:-translate-y-1/2 after:-translate-x-[110%] before:absolute before:md:h-[6px] before:h-1 before:w-4 before:md:w-6 before:bg-white before:right-0 before:top-1/2 before:-translate-y-1/2 before:translate-x-[120%] text-[28px] mb-4"
+        >
+          Phạm Văn Thuận
+        </h1>
+        <h2 class="text-white font-bold text-lg">Web developer</h2>
+        <ul class="flex mt-8 socials gap-6">
+          <li>
+            <a
+              href="https://github.com/ginn1111"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/v%C4%83n-thu%E1%BA%ADn-47670a201/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/vanthuan1309"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- END HERO SECTION -->
+
+      <div class="container">
+        <!-- ABOUT ME SECTION -->
+        <section class="text-primary mt-[100vh] py-[112px]" id="about-me">
+          <h1 class="text-3xl font-bold text-center mb-20">About Me</h1>
+          <div
+            class="flex gap-8 items-center md:items-start justify-center flex-col md:flex-row"
+          >
+            <article
+              class="flex gap-4 justify-between lg:w-4/12 md:w-5/12 w-full"
+            >
+              <ul
+                class="flex flex-col justify-between text-text space-y-3 flex-none md:ml-auto"
+              >
+                <li class="font-semibold text-sm">Full Name:</li>
+                <li class="font-semibold text-sm">Phone:</li>
+                <li class="font-semibold text-sm">Email:</li>
+              </ul>
+              <ul class="space-y-3 md:text-end">
+                <li>Phạm Văn Thuận</li>
+                <li><a href="tel:+84365338185">0365338185</a></li>
+                <li>
+                  <a href="mailto:vanthuanjw@gmail.com">vanthuanjw@gmail.com</a>
+                </li>
+              </ul>
+            </article>
+            <article class="lg:w-8/12 md:w-7/12 text-text space-y-3 w-full">
+              <h1 class="text-2xl font-bold">Hello there!</h1>
+              <p>
+                I'm Thuan, a passionate junior web developer with a deep love
+                for creating more and more awesome websites that are performance
+                and impact on the users, following the best practices and
+                conventions to make the project cleaner and mainer.
+              </p>
+              <p>
+                I embarked on my web development journey with a thirst for
+                knowledge and a determination to turn ideas into digital
+                realities. With a solid foundation in HTML, CSS, JavaScript, and
+                TypeScript, I'm excited to be part of the ever-evolving world of
+                web technologies.
+              </p>
+              <p>
+                In this dynamic field, I believe in lifelong learning. I'm eager
+                to take on challenges, learn from experiences, and collaborate
+                with like-minded individuals to create innovative web solutions.
+                I want to develop my skills bread to back-end development and
+                mobile development.
+              </p>
+            </article>
+          </div>
+
+          <div
+            class="text-center mt-[50px] my-cv max-w-max mx-auto relative border border-solid border-primary"
+          >
+            <a
+              href="https://www.topcv.vn/xem-cv/XFJUAQMDVFRbAFIEA1QEV1YGU1AAVgcGB1ZXBwdd57"
+              target="_blank"
+              rel="noreferrer"
+              class="text-xl flex items-center gap-2 justify-center px-8 py-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-paperclip"
+              >
+                <path
+                  d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"
+                />
+              </svg>
+              <p>My CV</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- END ABOUT ME SECTION -->
+
+        <!-- RESUME SECTION -->
+        <section class="text-primary py-[112px]" id="resume">
+          <h1 class="text-3xl font-bold text-center mb-20">My Resume</h1>
+          <!-- WORK EXPERIENCE SECTION -->
+          <h2
+            class="md:w-max w-full md:mx-auto text-xl font-semibold text-center border border-primary border-solid px-4 py-2 tracking-widest"
+          >
+            Work Experience
+          </h2>
+          <ul
+            class="space-y-10 mt-[100px] relative after:absolute after:h-[calc(100%_+_100px)] after:w-[1px] after:bg-primary after:bottom-0 md:after:left-1/2 after:left-0 after:md:-translate-x-1/2 pb-[50px]"
+          >
+            <li class="md:w-1/2 w-full">
+              <h2 class="font-bold text-2xl">FrontEnd Developer</h2>
+              <div class="relative my-4">
+                <h3 class="text-text">PayME - 04/2023 - Present</h3>
+                <a
+                  href="https://payme.vn/"
+                  target="_blank"
+                  rel="noopener"
+                  class="w-[52px] h-[52px] rounded-full bg-white p-2 absolute top-1/2 -translate-y-1/2 md:translate-x-1/2 -translate-x-1/2 md:right-0 md:left-auto left-0 z-10 md:-mr-[var(--padding-item)] -ml-[var(--padding-item)] shadow-[0_0_10px_5px_#56f3a2]"
+                >
+                  <img
+                    alt="payme"
+                    src="./public/assets/imgs/payme.png"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                Join a FrontEnd team to build impact web applications based on
+                the design and requirements of the operation team. Developing
+                new features, bugfix, and optimizing the performance of the
+                projects.
+              </p>
+            </li>
+
+            <li class="md:w-1/2 md:ml-auto w-full">
+              <h2 class="font-bold text-2xl">FrontEnd Developer</h2>
+              <div class="relative my-2">
+                <h3 class="text-text">Freelancer - 08/2024 - Present</h3>
+                <a
+                  href="https://chillvietnam.com/canalis-bar-quan-3/"
+                  target="_blank"
+                  rel="noopener"
+                  class="w-[52px] h-[52px] rounded-full bg-white p-1 absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-0 z-10 -ml-[var(--padding-item)] shadow-[0_0_10px_5px_#56f3a2]"
+                >
+                  <img
+                    alt="canalis"
+                    src="./public/assets/imgs/canalis.png"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                Join a team to building a news app, which helps customers to
+                accumulate points, receive discounts and events. building a web
+                management customers, who use the news app above.
+              </p>
+            </li>
+
+            <li class="md:w-1/2 w-full">
+              <h2 class="font-bold text-2xl">Intern FrontEnd</h2>
+              <div class="relative my-4">
+                <h3 class="text-text">GEEKUP - 11/2022 - 01/2023</h3>
+                <a
+                  href="https://geekup.vn/"
+                  target="_blank"
+                  rel="noopener"
+                  class="w-[52px] h-[52px] rounded-full bg-white p-2 absolute top-1/2 -translate-y-1/2 md:translate-x-1/2 -translate-x-1/2 md:right-0 md:left-auto left-0 z-10 md:-mr-[var(--padding-item)] -ml-[var(--padding-item)] shadow-[0_0_10px_5px_#56f3a2]"
+                >
+                  <img
+                    alt="payme"
+                    src="./public/assets/imgs/geekup.ico"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                Join Geek Internship (GI Winter 2022). Working on Agile
+                methodology with planing, pick backlog, delivery and
+                review/retros.Build branding website depend on eCommerce
+                platform for Geek up.
+              </p>
+            </li>
+          </ul>
+          <!-- END WORK EXPERIENCE SECTION -->
+
+          <!-- EDUCATION SECTION -->
+          <h2
+            class="md:w-max md:mx-auto w-full text-xl font-semibold text-center border border-primary border-solid px-4 py-2 tracking-widest"
+          >
+            Education
+          </h2>
+          <ul
+            class="space-y-10 mt-[100px] relative after:absolute after:h-[calc(100%_+_100px)] after:w-[1px] after:bg-primary after:bottom-0 after:md:left-1/2 after:left-0 after:md:-translate-x-1/2 pb-[20px]"
+          >
+            <li class="md:w-1/2 w-full">
+              <h2 class="font-bold text-2xl">Software engineering</h2>
+              <div class="relative my-4 text-text">
+                <h3 class="text-text">
+                  Posts and Telecommunications Institute of Technology
+                </h3>
+                <p>08/2019 - 01/2024</p>
+                <a
+                  href="https://ptithcm.edu.vn/"
+                  target="_blank"
+                  rel="noopener"
+                  class="w-[52px] h-[52px] rounded-full bg-white p-2 absolute top-1/2 -translate-y-1/2 md:translate-x-1/2 -translate-x-1/2 md:right-0 md:left-auto left-0 z-10 md:-mr-[var(--padding-item)] -ml-[var(--padding-item)] shadow-[0_0_10px_5px_#56f3a2]"
+                >
+                  <img
+                    alt="ptit"
+                    src="./public/assets/imgs/ptit.png"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <p class="text-white">
+                I learned there for 4.5 years, where I acquired a foundational
+                knowledge of software engineering - from designing software
+                system () to implementation (coding). Additionally, I achieved
+                numerous scholarships throughout each term.
+              </p>
+            </li>
+          </ul>
+          <!-- END EDUCATION SECTION -->
+        </section>
+        <!-- END RESUME SECTION -->
+
+        <!-- SKILL SECTION -->
+        <section class="text-primary py-[112px] !min-h-max mb-10" id="skills">
+          <h1 class="text-3xl font-bold text-center mb-20">My Skills</h1>
+          <ul
+            class="flex gap-8 flex-wrap-reverse max-w-[768px] mx-auto justify-center"
+          >
+            <li>
+              <a href="https://nodejs.org/en" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="nodejs" src="./public/assets/imgs/nodejs.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.postgresql.org/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img
+                    alt="postgresql"
+                    src="./public/assets/imgs/postgresql.png"
+                  />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://ui.shadcn.com/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="shadcn" src="./public/assets/imgs/shadcn.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://tailwindcss.com/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="tailwind" src="./public/assets/imgs/tailwind.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://sass-lang.com/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="sass" src="./public/assets/imgs/sass.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://react.dev/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="react" src="./public/assets/imgs/react.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://redux-toolkit.js.org/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="redux" src="./public/assets/imgs/redux.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.docker.com/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="docker" src="./public/assets/imgs/docker.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tanstack.com/query/latest/docs/framework/react/overview"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="rq" src="./public/assets/imgs/rq.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.prisma.io/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="prisma" src="./public/assets/imgs/prisma.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://nextjs.org/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="nextjs" src="./public/assets/imgs/nextjs.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://graphql.org/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="gql" src="./public/assets/imgs/gql.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://ant.design/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="antd" src="./public/assets/imgs/antd.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://git-scm.com/" target="_blank" rel="noopener">
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="git" src="./public/assets/imgs/git.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.typescriptlang.org/"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="ts" src="./public/assets/imgs/ts.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="js" src="./public/assets/imgs/js.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="css" src="./public/assets/imgs/css.png" />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                rel="noopener"
+              >
+                <div class="aspect-square max-w-[52px]">
+                  <img alt="html" src="./public/assets/imgs/html.png" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- END SKILL SECTION -->
+
+        <!-- PROJECT SECTION -->
+        <section class="text-primary py-[112px]" id="projects">
+          <h1 class="text-3xl font-bold text-center mb-20">Side Projects</h1>
+          <ul class="grid grid-cols-auto-fill-350 gap-x-8 gap-y-16">
+            <!-- Project Management -->
+            <li
+              class="bg-primary group relative px-8 py-4 shadow-[5px_5px_0_#a4b1cd] text-background cursor-pointer hover:shadow-[0_0_0] transition-all after:absolute after:w-full after:h-full after:top-0 after:left-0 hover:after:top-[-5px] hover:after:left-[-5px] after:transition-all after:opacity-0 hover:after:opacity-100 after:border-text after:border-solid after:border-b-0 after:border-r-0 after:border-[4px] after:z-[-1] flex flex-col"
+            >
+              <h2 class="font-bold tracking-widest text-3xl">
+                Project Management
+              </h2>
+              <p class="text-sm">09/2023 - 12/2023</p>
+              <p class="text-sm">
+                Project be used to manage tasks, sub-tasks, and related entity.
+                Authorization of user in a project and user in the system, user
+                can join via approved propose. Proposing supplies for executing
+                the tasks. Supporting drag and drop for create a task in the
+                period time, statistic projects, tracking state of tasks,
+                sub-tasks and projects, and others related features
+              </p>
+              <p class="mt-1 text-[10px] text-text font-semibold">
+                Accounts: minhbdk/123; tptk/123
+              </p>
+
+              <div
+                class="h-[250px] w-full border-background border-solid border-2 bg-[url('../assets/imgs/pj-management.png')] bg-top transition-all duration-1000 group-hover:bg-bottom bg-cover mb-4 mt-auto"
+              ></div>
+              <ul
+                class="flex items-center gap-2 absolute top-0 translate-y-full group-hover:-translate-y-[calc(100%_+_8px)] transition-all duration-800 z-[-1] left-0"
+              >
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img alt="nextjs" src="./public/assets/imgs/nextjs.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img alt="ts" src="./public/assets/imgs/ts.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img
+                      alt="tailwind"
+                      src="./public/assets/imgs/tailwind.png"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="docker" src="./public/assets/imgs/docker.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="prisma" src="./public/assets/imgs/prisma.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="nodejs" src="./public/assets/imgs/nodejs.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img
+                      alt="postgresql"
+                      src="./public/assets/imgs/postgresql.png"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img alt="shadcn" src="./public/assets/imgs/shadcn.png" />
+                  </div>
+                </li>
+              </ul>
+              <div class="flex items-center gap-4 py-2 justify-end">
+                <a
+                  href="https://project-management-client-eight.vercel.app/authen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-full p-1 text-primary bg-background w-8 h-8 grid place-items-center shadow-[0_0_10px_2px_#111927,inset_0_0_4px_0.5px_#56f3a2]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-send"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/ginn1111/project-management-docker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-full p-1 text-primary bg-background w-8 h-8 grid place-items-center shadow-[0_0_10px_2px_#111927,inset_0_0_4px_0.5px_#56f3a2]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <!-- eCommerce -->
+            <li
+              class="bg-primary group relative px-8 py-4 shadow-[5px_5px_0_#a4b1cd] text-background cursor-pointer hover:shadow-[0_0_0] transition-all after:absolute after:w-full after:h-full after:top-0 after:left-0 hover:after:top-[-5px] hover:after:left-[-5px] after:transition-all after:opacity-0 hover:after:opacity-100 after:border-text after:border-solid after:border-b-0 after:border-r-0 after:border-[4px] after:z-[-1] flex flex-col"
+            >
+              <h2 class="font-bold tracking-widest text-3xl">
+                eCommerce site and admin site
+              </h2>
+              <p class="text-sm">06/2023 - 08/2023</p>
+              <p class="text-sm">
+                ECommerce site provide features in eCommerce platform,
+                supporting payment via Stripe and search engine via Meilisearch.
+                Integrate with SendGird to send email when user place an order
+                successfully.
+              </p>
+              <p class="text-sm">
+                Admin site use for manage eCommerce site like: Currency, Region,
+                Payment provider, Shipping provider, Collection, Product, Price
+                and other related entities. This project using MedusaJS.
+              </p>
+              <div
+                class="h-[250px] w-full border-background border-solid border-2 bg-[url('../assets/imgs/pj-medusa.png')] bg-top transition-all duration-1000 group-hover:bg-bottom bg-cover mb-4 mt-auto"
+              ></div>
+              <ul
+                class="flex items-center gap-2 absolute top-0 translate-y-full group-hover:-translate-y-[calc(100%_+_8px)] transition-all duration-800 z-[-1] left-0"
+              >
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="nextjs" src="./public/assets/imgs/nextjs.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img alt="ts" src="./public/assets/imgs/ts.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img
+                      alt="tailwind"
+                      src="./public/assets/imgs/tailwind.png"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="docker" src="./public/assets/imgs/medusa.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="nodejs" src="./public/assets/imgs/nodejs.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="stripe" src="./public/assets/imgs/stripe.webp" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="meili" src="./public/assets/imgs/meili.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img
+                      alt="postgresql"
+                      src="./public/assets/imgs/postgresql.png"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div class="flex items-center gap-4 py-2 justify-end">
+                <a
+                  href="https://ginn-storefront.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-full p-1 text-primary bg-background w-8 h-8 grid place-items-center shadow-[0_0_10px_2px_#111927,inset_0_0_4px_0.5px_#56f3a2]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-send"
+                  >
+                    <path d="m22 2-7 20-4-9-9-4Z" />
+                    <path d="M22 2 11 13" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/ginn1111/medusa-storefront"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-full p-1 text-primary bg-background w-8 h-8 grid place-items-center shadow-[0_0_10px_2px_#111927,inset_0_0_4px_0.5px_#56f3a2]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+
+            <!-- Marketplace NFT App -->
+            <li
+              class="bg-primary group relative px-8 py-4 shadow-[5px_5px_0_#a4b1cd] text-background cursor-pointer hover:shadow-[0_0_0] transition-all after:absolute after:w-full after:h-full after:top-0 after:left-0 hover:after:top-[-5px] hover:after:left-[-5px] after:transition-all after:opacity-0 hover:after:opacity-100 after:border-text after:border-solid after:border-b-0 after:border-r-0 after:border-[4px] after:z-[-1] flex flex-col"
+            >
+              <h2 class="font-bold tracking-widest text-3xl">
+                Marketplace NFT App
+              </h2>
+              <p class="text-sm">06/2023 - 08/2023</p>
+              <p class="text-sm">
+                This app just demo how to a NFT marketplace perform (do not use
+                web3 to building). Some features like mint, listing and cancel
+                listing, create a collection and nfts of this collection, draw
+                simple pricing chart.
+              </p>
+              <p class="text-sm">
+                In this project, I just perform a FE role (React Native via
+                Expo).
+              </p>
+              <div
+                class="h-[250px] w-full border-background border-solid border-2 bg-[url('../assets/imgs/pj-nft.png')] bg-left transition-all duration-1000 group-hover:bg-right-bottom bg-cover mb-4 mt-auto"
+              ></div>
+              <ul
+                class="flex items-center gap-2 absolute top-0 translate-y-full group-hover:-translate-y-[calc(100%_+_8px)] transition-all duration-800 z-[-1] left-0"
+              >
+                <li>
+                  <div class="aspect-square max-w-8 rounded-full">
+                    <img alt="react" src="./public/assets/imgs/react.png" />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img
+                      alt="ts"
+                      src="https://www.cdnlogo.com/logos/e/72/expo-go-app.svg"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div class="aspect-square max-w-8">
+                    <img
+                      alt="firebase"
+                      src="./public/assets/imgs/firebase.png"
+                    />
+                  </div>
+                </li>
+              </ul>
+              <div class="flex items-center gap-4 py-2 justify-end">
+                <a
+                  href="https://github.com/ginn1111/marketplace-nft"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-full p-1 text-primary bg-background w-8 h-8 grid place-items-center shadow-[0_0_10px_2px_#111927,inset_0_0_4px_0.5px_#56f3a2]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-github"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- END PROJECT SECTION -->
+
+        <!-- INTERESTING SECTION-->
+        <section class="text-primary py-[112px] !min-h-max" id="interesting">
+          <h1 class="text-3xl font-bold text-center mb-20">Interesting</h1>
+          <ul class="max-w-[600px] mx-auto grid grid-cols-1 gap-4">
+            <li>
+              <div class="flex items-center gap-2">
+                <h2 class="font-bold text-xl">Neovim</h2>
+              </div>
+              <p class="text-text mt-1 flex gap-2">
+                I'm a big fan of editor, it help me boots up productivity on
+                coding via keybinding, shortcut, ... with awesome feature like
+                move around of editor fast or jump over the tab without the
+                cursor!
+              </p>
+              <a
+                class="block ml-auto max-w-max text-sm"
+                target="_blank"
+                rel="noopener"
+                href="https://github.com/ginn1111/d0t_file"
+              >
+                my dotfile &lt;/&gt;
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center gap-2">
+                <h2 class="font-bold text-xl">Productive in working</h2>
+              </div>
+              <p class="text-text mt-1">
+                I always read some blogs, technical document to update and
+                refresh my skills set. In additional, I also want to reach in
+                another role (which related with current role) to have a
+                overview in my career.
+              </p>
+              <a href="https://app.daily.dev/ginn"
+                ><img
+                  src="https://api.daily.dev/devcards/v2/FEmttsb9Yeh3lpZ0SzGIu.png?r=r85&type=wide"
+                  width="652"
+                  alt="Phạm Văn Thuận's Dev Card"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <!-- END INTERESTING SECTION-->
+      </div>
+    </main>
+
+    <!-- GO TO TOP BUTTON-->
+    <button
+      id="go-up-btn"
+      class="fixed bottom-16 right-8 bg-primary p-4 rounded-full translate-x-[200%]"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-move-up"
+      >
+        <path d="M8 6L12 2L16 6" />
+        <path d="M12 2V22" />
+      </svg>
+    </button>
+    <nav
+      class="fixed bottom-4 py-1 px-1 left-1/2 -translate-x-1/2 rounded-3xl bg-primary/50 backdrop-blur-md w-max shadow-background/50 shadow-sm translate-y-[calc(100%_+_16px)] transition-all duration-500"
+    >
+      <p
+        id="indicator"
+        class="absolute h-[calc(100%_-_8px)] bg-background rounded-3xl z-10 transition-all duration-500 left-0 w-0"
+      ></p>
+      <ul class="flex items-center text-background relative z-20">
+        <li
+          id="about-me-nav"
+          class="flex-none text-sm font-semibold py-1 px-2 text-background"
+        >
+          <a href="#about-me">About me</a>
+        </li>
+        <li
+          id="resume-nav"
+          class="flex-none text-sm font-semibold py-1 px-2 text-background"
+        >
+          <a href="#resume">My resume</a>
+        </li>
+        <li
+          id="skills-nav"
+          class="flex-none text-sm font-semibold py-1 px-2 text-background"
+        >
+          <a href="#skills">My skills</a>
+        </li>
+        <li
+          id="projects-nav"
+          class="flex-none text-sm font-semibold py-1 px-2 text-background"
+        >
+          <a href="#projects">Side projects</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
